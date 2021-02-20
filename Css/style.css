@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+div .navContainer {
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.icone-deMenu {
+    width: 20%;
+    height: 40px;
+    padding-bottom: 5px;
+    background-color: rgba(243, 243, 243, 0.8);
+}
+
+body img {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+}
+
+.icon-Menu {
+    float: right;
+    width: 45px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container>ul {
+    top: 15px;
+    margin-top: 55px;
+    list-style: none;
+    width: 100%;
+}
+
+.listItem>li {
+    width: 100%;
+    height: 35px;
+    color: black;
+    padding-bottom: 1.0rem;
+    padding-top: 0.7rem;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "Roboto Slab", cursive;
+    font-size: x-large;
+    font-weight: 250px;
+    cursor: pointer;
+}
+
+.iconsMenu {
+    position: relative;
+    float: left;
+    left: 15px;
+    width: 30.75px;
+    height: auto;
+}
+
+.listItem>li:hover {
+    background-color: black;
+    color: white;
+    border: white 4px solid;
+}
+
+.contato {
+    position: relative;
+    top: 20%;
+    font-family: 'Satisfy', cursive;
+    color: black;
+    font-size: 20px;
+    font-weight: 300px;
+    transform: translate(-10%, 50%);
+}
+
+.contato>h2 {
+    text-align: center;
+}
+
+.mediaIcons>li>img {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.mediaIcons>li {
+    display: inline;
+    margin: 40px;
+    ;
+}
+
+.a {
+    position: relative;
+    float: right;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.a::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background-color: black;
+    border-radius: 5px;
+    top: 5px;
+    transition: 1s ease;
+}
+
+.a::before {
+    top: 20px;
+    left: 15px;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 7px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+#hambuger:checked~label .a::after {
+    top: 19px;
+    transform: rotate(225deg)
+}
+
+#hambuger:checked~label .a::before {
+    width: 45px;
+    height: 7px;
+    left: 2px;
+    transform: rotate(-225deg)
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 60px;
+    background-color: rgb(6, 6, 49);
+}
+
+header>h1 {
+    position: relative;
+    color: white;
+    font-family: "Roboto Slab", cursive;
+    left: 5%;
+}
+
+.user>img {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 100%;
+    left: 95%;
+    top: 0;
+    opacity: 1;
+}
+
+#userName {
+    position: absolute;
+    color: white;
+    left: 87%;
+    bottom: 0;
+    text-emphasis-style: inherit;
+}
